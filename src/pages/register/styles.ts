@@ -2,8 +2,18 @@ import { Box, Heading, Text, styled } from '@ignite-ui/react'
 
 export const Container = styled('main', {
   maxWidth: 572,
+  position: 'relative',
   margin: '$20 auto $4',
   padding: '0 $4',
+
+  [`> svg`]: {
+    position: 'absolute',
+    width: 1100,
+    left: '50%',
+    transform: 'translateX(-50%)',
+    zIndex: '-10',
+    opacity: '0.3',
+  },
 })
 
 export const Header = styled('div', {
