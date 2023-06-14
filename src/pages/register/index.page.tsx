@@ -48,6 +48,8 @@ export default function Register() {
         name: data.name,
         username: data.username,
       })
+
+      await router.push('register/connect-callendar')
     } catch (err) {
       console.log(err)
     }
